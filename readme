@@ -2,6 +2,7 @@ DynamoBackoffice
 ================
 
 A quick way to add the custom backoffice look to your app.
+Run rake dynamo_backoffice:install to copy the files 
 Just specify the layout "backoffice" to the controller or actions you want to have inherit the necessary styles.
 
 
