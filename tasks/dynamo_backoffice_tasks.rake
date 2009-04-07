@@ -7,8 +7,9 @@ namespace :dynamo_backoffice do
 
   desc 'Installs required template files, images and stylesheets'
   task :install do
-    #FileUtils.cp_r "#{PLUGIN_ROOT}/public/*", "#{RAILS_ROOT}/public/", :verbose => true
-    FileUtils.cp_r "#{PLUGIN_ROOT}/view/layouts/backoffice.html.erb", "#{RAILS_ROOT}/app/views/layouts", :verbose => true
+    puts 'copying files'
+    FileUtils.cp_r "#{PLUGIN_ROOT}public/", "#{RAILS_ROOT}", :verbose => true
+    FileUtils.cp_r "#{PLUGIN_ROOT}views/layouts/backoffice.html.erb", "#{RAILS_ROOT}/app/views/layouts", :verbose => true
   end
   desc 'Removes the backoffice files'
   task :uninstall do
