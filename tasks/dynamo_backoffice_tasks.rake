@@ -13,7 +13,9 @@ namespace :dynamo_backoffice do
   end
   desc 'Removes the backoffice files'
   task :uninstall do
-    FileUtils.rm "#{RAILS_ROOT}/public/javascripts/swfobject.js", :force => true, :verbose => true
-    FileUtils.rm "#{RAILS_ROOT}/public/open-flash-chart.swf", :force => true, :verbose => true
+    FileUtils.remove_dir "#{RAILS_ROOT}/public/images/backoffice", :force => true, :verbose => true
+    FileUtils.rm_f "#{RAILS_ROOT}/public/stylesheets/backoffice.css", :verbose => true
+    FileUtils.rm_f "#{RAILS_ROOT}/public/stylesheets/backofficemaster.css", :verbose => true
+    FileUtils.rm "#{RAILS_ROOT}/app/views/layouts/backoffice.html.erb", :force => true, :verbose => true
   end
 end
