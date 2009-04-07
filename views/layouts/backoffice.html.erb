@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+  <title>Dynamo Administration</title>
+
+  <%= stylesheet_link_tag 'backoffice', 'backofficemaster' %>
+
+</head>
+
+<body>
+	<div id="global">
+   
+   	<div id="headerLeft"><h1><%= image_tag 'backoffice/pen.jpg' %> Connect The Dots Admin</h1> </div>
+    
+    <div id="headerRight"></div>
+	<div id="container">
+    
+	<!--dynamo logo-->
+	<div id="tabMenuText">powered by :	</div>
+   	<div id="tabMenu"><%= image_tag 'backoffice/dynamo.jpg' %></div>
+	
+<p style="color: green"><%= flash[:notice] %></p>
+
+	<div id="leftContent">
+		
+		
+			<%= yield  %>
+
+    </div>
+	<div id="rightContent">
+		
+		
+		<div class="rightBoxes">	
+		
+		</div>
+
+	</div><!-- end of rightContent-->
+
+	<div class="clear">&nbsp;</div>
+    
+	</div><!--end of container-->
+	</div><!--end of global-->
+	<p align="center">&copy; Dynamo <%= Date.today.year %></p>
+
+</body>
+</html>

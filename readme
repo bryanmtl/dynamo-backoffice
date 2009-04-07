@@ -1,0 +1,19 @@
+DynamoBackoffice
+================
+
+A quick way to add the custom backoffice look to your app.
+Just specify the layout "backoffice" to the controller or actions you want to have inherit the necessary styles.
+
+
+Example
+=======
+
+Example goes here.
+
+
+Copyright (c) 2009 Dynamo, released under the MIT license
+
+
+To-Do
+=======
+Add basic authenticationt to controller code

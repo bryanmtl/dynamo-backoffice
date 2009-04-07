@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+/* CSS Document */
+body{
+	background-color:#FCF5E0;
+	margin:0px;
+	padding:0px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#333333;
+	height:100%;
+	width:100%;
+}
+
+img {
+	border: none;
+}
+
+#global{
+	position:relative;
+	width:1175px;
+	margin:5px auto;
+	padding:0px;
+	font-size:11px;
+}
+
+#container{
+	position:relative;
+	width:1175px;
+	clear:both;
+	background-color:#ffffff;
+}
+
+/****borders *****/
+#container, #leftContent, .rightBoxes{border:1px solid #c9c9c9;}
+
+/***** titles *****/
+h1{
+	font-size:24px;
+}
+
+h2{
+	background-color:#ECBc30;
+	margin-top:0px;
+	text-transform:uppercase;
+	margin-bottom:2px;
+}
+h2, h3{
+	width:930px;
+	padding-left:5px;
+	font-size:11px;
+	color:#ffffff;
+	height:25px;
+	line-height:25px;
+	vertical-align:middle;}
+	
+h3{background-color:#65625a; margin-top:5px;}
+
+#headerLeft{
+	float:left;
+	width:900px;
+}
+
+/**************************top navigation***************/
+#headerRight{/*top navigation container*/
+	margin-left:700px;
+	text-align:right;
+	font-weight:bold;
+	margin-right:15px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+a.topNav{/*top nav links*/
+	text-decoration:none;
+	color:#333333;
+}
+a.topNav:hover{
+	text-decoration:underline;
+}
+a.topNavActive{/*top nav active page*/
+	text-decoration:underline; 
+	color:#333333;
+}
+
+/*to place the dynamo logo*/
+#tabMenu{
+	position:absolute; 
+	right:15px;
+	top:-25px; 
+	margin:0px;
+	padding:0px;
+	
+} 
+#tabMenuText{
+	position:absolute; 
+	right:210px;
+	top:-23px;
+	font-size:12px; 
+}
+
+/*************************CONTAINERS FOR THE MAIN CONTENT *********************************/
+#leftContent{/*left section*/
+	float:left; 
+	margin-left:10px;
+	padding:5px;
+	width:933px;
+}
+#rightContent{/*right section*/
+	margin-left:975px; 
+} 
+#leftContent, #rightContent{margin-top:27px;}
+.clear{clear:both;}
+/*********************************************tables left section **************************/
+table{width:935px;}/***** ajout mno 20 juin**************/
+
+ td{
+	padding:5px; 
+	vertical-align:top;
+	text-align: left;
+	vertical-align: top;
+}
+
+tr.even {
+	background-color: #fff;
+}
+
+tr.odd {
+	background-color: #f3f3f3;
+}
+
+ th {
+	padding:5px; 
+	vertical-align:top;
+	text-align:left;
+	background-color:#D3D3D3;
+	border-right:3px solid #ffffff;
+}
+
+ tr td img {
+	vertical-align: middle;
+}
+
+table{
+	margin-top:0px;
+	width:935px;/***** ajout mno 20 juin**************/
+}
+ td{
+	padding:5px; 
+	text-align:center;
+}
+input, select, option{
+	font-size:11px; 
+	font-family:Verdana, Arial, Helvetica, sans-serif; 
+	color:#333333;
+}
+.bgButton{
+	background:url(images/bg_button.gif) top no-repeat;
+	width:128px;
+	height:29px;
+	text-align:center;
+	color:#ffffff;
+	border:0px;
+}
+.firstRow{ 
+	margin-top:2px;
+}
+.cellTitle {	
+	background-color:#65625a;
+	color:#ffffff;
+	font-weight:bold;
+	text-align:center;
+}
+
+.cellSubTitleLine {	
+	background-color:#D3D3D3;
+	color:#333333;
+	font-weight:bold;
+	text-align:left;
+}
+	
+/*styles for the text area*/
+.textFormat img{display:inline;
+padding:5px; border:0px;}
+td.textFormat{background-color:#D3D3D3; }
+.textArea{border:0px; background-color:#ffffff; width:99%;}
+.textTable td{border:1px solid #333333;}
+
+td.cellSubTitle, td.cellSubTitle, .cellSubTitle td, td.cellSubTitleEnd{background-color:#D3D3D3;}
+.cellSubTitle, .cellSubTitle td{border-right:3px solid #ffffff;}
+td.cellSubTitleEnd{border-right:0px;}
+
+
+td.lineGrey, .lineGrey td {background-color:#f3f3f3;}
+.lineGrey, .lineGrey td{border:0px solid #ffffff;}
+
+td.cellGrey, .cellGrey td, td.cellGreyEnd{background-color:#f3f3f3;}
+.cellGrey, .cellGrey td{border-right:3px solid #ffffff;}
+td.cellGreyEnd{border-right:0px;}
+
+/******* right section (boxes)******/
+.rightBoxes{
+	width:163px;
+	padding:10px;
+	margin-bottom:10px;
+}
+p.titleBoxes{
+	font-weight:bold;
+	background-color:#f3f3f3;
+	height:20px;
+	line-height:20px;
+	vertical-align:middle;
+	margin-top:0px;
+	padding-left:2px;
+}
+a.linkBox{
+	color:#0033CC;
+	text-decoration:underline;
+	padding-left:10px;
+}
+a.linkBox:hover{text-decoration:none;}
+
+/* styles for the external forms */
+
+/*form tables */
+#formTable td.withBg {
+	background: #65625a ;
+	height: 20px;
+	padding: 1em 0 1em 1.2em;
+	vertical-align: top;
+	border: 0px solid black;
+}
+
+#formTable td.smallHeader {
+	color: #FFFFFF;
+	font: bold 12px Arial;
+	text-transform: uppercase;
+}
+
+#formTable td.taller {
+	height: 3em;
+}
+
+/* GH added 20-06-2007 */
+/* Message */
+.ErrorMessage {
+	color: #FF0000;
+	font: bold 12px Arial;
+	padding: 10px;
+	width:500px;
+}
+/* Image Boxes */
+.imageBox,.imageBoxHighlighted{
+	width:180px;	/* Total width of each image box */
+	height:230px;	/* Total height of each image box */
+	float:left;
+}
+.imageBox_theImage{
+	width:165px;	/* Width of image */
+	height:165px;	/* Height of image */
+		
+	/* 
+		Don't change these values *
+	*/
+	background-position: center center;
+	background-repeat: no-repeat;		
+	margin: 0 auto;
+	margin-bottom:2px;
+}
+	
+.imageBox .imageBox_theImage{
+	border:1px solid #DDD;	/* Border color for not selected images */
+	padding:2px;
+}
+	
+.imageBoxHighlighted .imageBox_theImage{
+	border:3px solid #316AC5;	/* Border color for selected image */
+	padding:0px;
+}
+.imageBoxHighlighted table {	/* Title of selected image */
+	background-color: #FFFFFF;
+	color:#000000;
+}
+.imageBoxHighlighted td {	/* Title of selected image */
+	background-color: #FFFFFF;
+	color:#000000;
+	padding:2px;
+}
+	
+.imageBox_label{	/* Title of images - both selected and not selected */
+	text-align:center;
+	font-family: arial;
+	font-size:10px;		
+	padding:2px;
+	margin: 0 auto;
+}
+	
+.imageBox_label table {	/* Title of selected image */
+	color:#444444;
+	width:170px;
+	border: 1px solid #DDD;
+}
+	
+.imageBox_label td {	/* Title of selected image */
+	color:#444444;
+	padding:2px;
+	margin:2px;
+}
+
+/*** ****/
